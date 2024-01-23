@@ -90,6 +90,7 @@ This analysis involves the distribution of total accidents across different mont
 
 ```SQL
 --Comparing the Percentage of Total Accidents by Month
+
 SELECT    Month_Name,
           COUNT(Collision_ID) AS Total_Accident,
           ROUND(CAST(COUNT(Collision_ID)AS FLOAT)/(SELECT CAST(COUNT(Collision_ID) AS FLOAT)
@@ -115,6 +116,44 @@ ORDER BY  Month_Number
 |November|17543|7.36|
 |December|16948|7.11|
 
+Based on the total number of accidents in each month and the corresponding percentages relative to the yearly total. 
+
+- The percentage of total accidents varies from month to month, with some months having higher accident counts than others.
+- March has the highest number of accidents with 25,099 and highest percentage relative to the total (10.53%), indicating it might be a month with increased risk or contributing factors.
+- Other months with relatively high accidents include January, which has a total of 23,024 accidents (9.66%), February with a total of 21,207 accidents (8.89%), June with a total of 20,079 accidents (8.42%), and May with a total of 19,749 accidents (8.28%)
+- December has the lowest total number of accidents and the lowest percentage relative to the yearly total (7.11%), followed by November with 17,543 accidents (7.36%). These lower counts in December and November might be influenced by factors like reduced outdoor activities, reduced travel during the holiday season, or increased awareness during the festive season.
+- The accident counts in August, September, and October are relatively stable, ranging from 18,801 (7.89%) to 19,148 (8.03%).
+
+**2. Break down accident frequency by day of week and hour of day. Based on this data, when do accidents occur most frequently?**
+
+Breaking down accident frequency by day of the week and hour of the day helps to examining and analyzing the data to understand when accidents occur most often. This process aims to identify specific patterns and trends in terms of both the day of the week and the time of day when accidents are most likely to happen. By categorizing and analyzing the data in this way, it becomes possible to pinpoint certain days and times that exhibit higher accident rates.
+
+To address this question, an extensive SQL query was executed to calculate the aggregate count of accidents occurring on a weekly basis, further categorized by different hours of the day.
+
+```SQL
+--Break Down of Accident Frequency by Day of Week and Hour of the Day
+
+SELECT       Week_Name,
+             [0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
+             [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
+             [21], [22], [23]
+FROM
+(SELECT      Week_Name,
+             Week_Number,
+             [Hours],
+             COUNT(Collision_ID) AS Total_Accidents
+FROM         Tbl_NYC_Traffic_Accidents
+GROUP BY     Week_Name,
+             Week_Number,
+             [Hours]) AS Derived_Table
+			
+PIVOT(       SUM(Total_Accidents)
+             FOR [Hours]
+             IN ([0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
+             [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
+             [21], [22], [23])) AS PIV_
+ORDER BY     Week_Number
+```
 
 
 
