@@ -100,7 +100,7 @@ A primary key ensures that each record in the table is uniquely identified. This
 
 After the execution of data cleaning and processing, the dataset for this analysis is now well-structured, consistent, and free from significant issues that could hinder analysis or interpretation. The data adheres to standardized formats and consistent naming conventions. All necessary data fields are present and well populated, the data values are accurate, data types are appropriately assigned to each column, and there are no duplicate records. 
 
-For the completet data cleaning processes, Click [Here](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents/blob/main/Data_cleaning.pdf)
+For the complete data cleaning processes, Click [Here](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents/blob/main/Data_cleaning.pdf)
 
 ## Data Analysis and Insight
 
