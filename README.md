@@ -100,7 +100,20 @@ GROUP BY  Month_Name,
 ORDER BY  Month_Number
 ```
 
-
+|Month_Name|Total_Accident|%_of_Total_Accident|
+|----------|--------------|-------------------|
+|January|23024|9.66|
+|February|21207|8.89|
+|March|25099|10.53|
+|April|19180|8.04|
+|May|19749|8.28|
+|June|20079|8.42|
+|July|18872|7.92|
+|August|18801|7.89|
+|September|18771|7.87|
+|October|19148|8.03|
+|November|17543|7.36|
+|December|16948|7.11|
 
 
 
