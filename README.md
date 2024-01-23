@@ -233,7 +233,8 @@ Belt Parkway and Broadway experience a higher frequency of accidents compared to
 This first part of the question “What was the most common contributing factor for the accidents reported?” seeks to identify the factor that played the most significant role in the occurrence of reported accidents, helping to prioritize interventions or safety measures to address the common causes of accidents. To determine the most contributing factor, a query was executed to calculate the total number of accidents associated with each contributing factor and their respective percentages relative to the overall total number of reported accidents.
 
 ```SQL
---Top 5 Contributing Factors to the most Reported Accident 
+--Top 5 Contributing Factors to the most Reported Accident
+
 Select		Top 5
 		Contributing_Factor, 
 		COUNT(Collision_ID) AS Total_Accidents,
