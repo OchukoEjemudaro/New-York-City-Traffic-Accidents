@@ -1,5 +1,9 @@
 # ANALYSIS OF NEW YORK CITY TRAFFIC ACCIDENTS
 
+## Table of Content
+
+
+
 A SQL and POWER BI project that examine New York City Traffic Accidents data, aiming to identify key patterns, contributing factors, and potential areas for improvement in New York City.
 
 ## Project Overview
@@ -30,6 +34,14 @@ Several stakeholders can benefit from the insights derived from this analysis of
 -	**Emergency Services:** Emergency service providers can benefit from the insights to optimize response times and resource allocation in areas prone to frequent accidents.
 -	**Community Advocates:** Community groups and safety advocates can use the information to raise awareness, advocate for improvements in specific locations, and collaborate with authorities to enhance road safety.
 -	**City Planners and Urban Developers:** City planners can use the analysis to identify high-accident areas and patterns, informing decisions about infrastructure improvements, traffic flow management, and safety measures to enhance overall urban planning.
+
+## Skills Demostrated
+
+- Data Connection In Microsoft SQL Server
+- Data Cleaning and Preparation
+- Data Analysis with Microsoft SQL Server
+- Connected Power BI with Microsoft SQL Server
+- Data Visualization
 
 ## Data Source
 The project employs a dataset containing information on NYC traffic accidents, obtained from the Maven Analytics website, where datasets are made available for practice purposes. The dataset, available in CSV format, comprises a single table, encompassing 238,421 rows and 18 columns. This table captures comprehensive details about NYC traffic accidents, including information such as Collision ID, Date, Time, Borough, Street Name, Cross Street, Latitude, Longitude, Contributing Factor, Vehicle Type, Persons Injured, Persons Killed, Pedestrians Injured, Pedestrians Killed, Cyclists Injured, Cyclists Killed, Motorists Injured, and Motorists Killed.
