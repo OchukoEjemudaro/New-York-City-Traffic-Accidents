@@ -155,7 +155,7 @@ Breaking down accident frequency by day of the week and hour of the day helps to
 To address this question, an extensive SQL query was executed to calculate the aggregate count of accidents occurring on a weekly basis, further categorized by different hours of the day.
 
 ```SQL
---Break Down of Accident Frequency by Day of Week and Hour of the Day
+--Break Down of Accident Frequency by the Week and Hour of the Day
 
 SELECT       Week_Name,
              [0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
@@ -233,7 +233,7 @@ Belt Parkway and Broadway experience a higher frequency of accidents compared to
 This first part of the question “What was the most common contributing factor for the accidents reported?” seeks to identify the factor that played the most significant role in the occurrence of reported accidents, helping to prioritize interventions or safety measures to address the common causes of accidents. To determine the most contributing factor, a query was executed to calculate the total number of accidents associated with each contributing factor and their respective percentages relative to the overall total number of reported accidents.
 
 ```SQL
---Top 5 Contributing Factors to the most Reported Accident
+--Top 5 Contributing Factor to the Reported Accident
 
 Select		Top 5
 		Contributing_Factor, 
@@ -263,7 +263,7 @@ From the above analysis;
 The second part of the question, 'What about for fatal accidents specifically,' directs attention to incidents resulting in fatalities. The question aims to identify the total number of accidents caused by contributing factors where the outcome was fatal. To provide answer to this question, a query was executed to calculate the total number of accidents caused by these contributing factors specifically in cases where the outcome was fatal.
 
 ```SQL
--- Top 5 Contributing Factors to Resulted Fatal Accidents.
+-- Top 5 Contributing Factor Resulted to Fatal Accidents.
 
 Select		Top 5
 		Contributing_Factor, 
