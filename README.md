@@ -48,8 +48,8 @@ Several stakeholders can benefit from the insights derived from this analysis of
 ## Skills Demostrated
 
 - Data Connection In Microsoft SQL Server
-- Data Cleaning and Preparation
-- Data Analysis with Microsoft SQL Server
+- Data Cleaning and Preparation with SQL Server
+- Data Analysis with SQL Server
 - Connected Power BI with Microsoft SQL Server
 - Data Visualization
 
