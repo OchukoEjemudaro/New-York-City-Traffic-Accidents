@@ -2,7 +2,17 @@
 
 ## Table of Content
 
-
+- [Project Overview](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#project-overview)
+- [Project Scope](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#project-scope)
+- [Business Objective](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#business-objective)
+- [Document Purpose](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#document-purpose)
+- [Use Case](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#use-case)
+- [Skills Demostrated](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#skills-demostrated)
+- [Data Source](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-source)
+- [Data Cleaning and Processing](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-cleaning-and-processing)
+- [Data Analysis and Insight](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-analysis-and-insight))
+- [Recommendation](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#recommendation)
+- [Conclusion](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#conclusion)
 
 A SQL and POWER BI project that examine New York City Traffic Accidents data, aiming to identify key patterns, contributing factors, and potential areas for improvement in New York City.
 
