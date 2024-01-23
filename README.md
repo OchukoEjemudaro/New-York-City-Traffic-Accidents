@@ -155,7 +155,7 @@ Breaking down accident frequency by day of the week and hour of the day helps to
 To address this question, an extensive SQL query was executed to calculate the aggregate count of accidents occurring on a weekly basis, further categorized by different hours of the day.
 
 ```SQL
---Break Down of Accident Frequency by the Week and Hour of the Day
+--Break Down of Accident Frequency by Day of the Week and Hour of the Day
 
 SELECT       Week_Name,
              [0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
