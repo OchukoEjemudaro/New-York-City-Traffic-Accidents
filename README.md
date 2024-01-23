@@ -100,6 +100,8 @@ A primary key ensures that each record in the table is uniquely identified. This
 
 After the execution of data cleaning and processing, the dataset for this analysis is now well-structured, consistent, and free from significant issues that could hinder analysis or interpretation. The data adheres to standardized formats and consistent naming conventions. All necessary data fields are present and well populated, the data values are accurate, data types are appropriately assigned to each column, and there are no duplicate records. 
 
+For the completet data cleaning processes, Click [Here](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents/blob/main/Data_cleaning.pdf)
+
 ## Data Analysis and Insight
 
 The main goal of this analysis is to examine the distribution of accidents throughout different months, aiming to uncover any seasonal patterns. Furthermore, it seeks to analyze accident frequency based on both the day of the week and the hour of the day to pinpoint peak occurrence times. The analysis will also identify the particular street with the highest reported accidents, shedding light on crucial areas for potential safety enhancements. Additionally, the project aims to ascertain the prevailing factors contributing to accidents, with a specific emphasis on understanding those linked to fatal incidents.
