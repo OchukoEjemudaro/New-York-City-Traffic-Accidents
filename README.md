@@ -164,20 +164,117 @@ ORDER BY     Week_Number
 |Friday|1532|717|594|511|534|580|993|1324|1957|1710|1588|1741|1982|1923|2164|2386|2447|2463|2216|1893|1625|1571|1534|1511
 |Saturday|1883|1270|1118|1115|1097|869|775|779|1072|1111|1357|1452|1625|1637|1789|1768|1839|1815|1782|1620|1704|1523|1502|1535|
 
+From the above analysis;
 
+- Accidents consistently occur across all days, with notable peaks during rush hours. 
+- Weekdays, from Monday to Friday, in the mornings from 7 am to 9 am and in the evenings from 4 pm to 6 pm, exhibit a clear pattern of increased accidents, indicating a correlation with rush hour traffic and commuting patterns. The spike in accidents during weekday mornings may be associated with increased vehicular activity as people head to work, school, or other obligations, while during the evening, it may also be linked to the period when individuals are returning home from work or school.
+- Saturdays and Sundays showcase a shift in accident patterns, with higher accident frequencies observed during the afternoon and evening hours from 1 pm to 8 pm. This temporal shift suggests a potential association with weekend leisure activities or increased travel during these hours. 
+- Both Saturday and Sunday between 12am and 4am show high accident counts during late-night hours, indicating potential issues related to nightlife and early-morning activities.
+- Friday and Saturday nights from 9 pm to 11 pm also present high accident counts during late-night hours, possibly indicating a correlation with increased social activities or nightlife.
 
+**3. On which particular street were the most accidents reported? What does that represent as a percentage of all reported accidents?**
 
+This involves identifying the street where the highest number of accidents occurred and determining the percentage this count represents compared to the total number of reported accidents. To provide an answer to this question, a query is needed to pinpoint the specific street where the highest number of accidents were reported and calculate the percentage relative to the overall total number of reported accidents.
 
+```SQL
+-- Top 5 Streets with the most Reported Accidents
 
+Select		Top 5
+		Street_Name, 
+		COUNT(Collision_ID) AS Total_Accidents,
+		ROUND(CAST(COUNT(Collision_ID)AS FLOAT)/(SELECT CAST(COUNT(Collision_ID) AS FLOAT)
+		FROM Tbl_NYC_Traffic_Accidents)*100,2) AS [%_of_Total_Accident] 
+FROM 		Tbl_NYC_Traffic_Accidents
+GROUP BY 	Street_Name
+ORDER BY 	COUNT(Collision_ID) DESC
+```
 
+|Street_Name|Total_Accident|%_of_Total_Accident|
+|----------|--------------|-------------------|
+|Belt Parkway|3728|1.56|
+|Broadway|2794|1.17|
+|Atlantic Avenue|2230|0.94|
+|Long Island Expressway|2165|0.91|
+|Brooklyn Queens Expressway|2159|0.91|
 
+From this analysis;
 
+- The highest number of accidents occurred on Belt Parkway, accounting for 1.56% of the total reported accidents and Broadway follows closely behind with 1.17% of the total accidents.
+- Atlantic Avenue, Long Island Expressway, and Brooklyn Queens Expressway have relatively similar accident counts, each representing around 0.91% to 0.94% of the overall total accidents.
 
+Belt Parkway and Broadway experience a higher frequency of accidents compared to the other mentioned locations.
 
+**4. What was the most common contributing factor for the accidents reported? What about for fatal accidents specifically?**
 
+This first part of the question “What was the most common contributing factor for the accidents reported?” seeks to identify the factor that played the most significant role in the occurrence of reported accidents, helping to prioritize interventions or safety measures to address the common causes of accidents. To determine the most contributing factor, a query was executed to calculate the total number of accidents associated with each contributing factor and their respective percentages relative to the overall total number of reported accidents.
 
+```SQL
+--Top 5 Contributing Factors to the most Reported Accident 
+Select		Top 5
+		Contributing_Factor, 
+		COUNT(Collision_ID) AS Total_Accidents,
+		ROUND(CAST(COUNT(Collision_ID)AS FLOAT)/(SELECT CAST(COUNT(Collision_ID) AS FLOAT)
+		FROM Tbl_NYC_Traffic_Accidents)*100,2) AS [%_of_Total_Accident] 
+FROM 		Tbl_NYC_Traffic_Accidents
+GROUP BY	Contributing_Factor
+ORDER BY 	COUNT(Collision_ID) DESC
+```
+|Contributing_Factor|Total_Accident|%_of_Total_Accident|
+|----------|--------------|-------------------|
+|Unspecified|59549|24.98|
+|Driver Inattention/Distraction|58308|24.46|
+|Failure to Yield Right-of-Way|16555|6.94|
+|Following Too Closely|15519|6.51|
+|Passing or Lane Usage Improper|10733|4.5|
 
+From the above analysis;
 
+- Accidents with an unspecified contributing factor account for the highest percentage (24.98%) of the overall total accidents. The term "unspecified" indicating cases where the contributing factor is known to be unspecified or unknown
+- Driver inattention or distraction is the second most common contributing factor, causing 24.46% of the reported accidents. This highlights the critical role of attentiveness and focus while driving, indicating a potential area for targeted awareness campaigns or interventions to reduce distracted driving.
+- Failure to yield right-of-way is a notable contributing factor, causing 6.94% of accidents. This emphasizes the importance of proper adherence to traffic rules and yielding procedures, suggesting potential areas for traffic education and enforcement.
+- Accidents resulting from following too closely represent 6.51% of the total accidents. This indicates that maintaining a safe following distance is crucial to prevent rear-end collisions, suggesting educational initiatives on safe driving distances.
+- Improper passing or lane usage contributes to 4.5% of accidents. This insight highlights the significance of proper lane discipline and safe passing practices, indicating a potential focus area for traffic safety measures.
 
+The second part of the question, 'What about for fatal accidents specifically,' directs attention to incidents resulting in fatalities. The question aims to identify the total number of accidents caused by contributing factors where the outcome was fatal. To provide answer to this question, a query was executed to calculate the total number of accidents caused by these contributing factors specifically in cases where the outcome was fatal.
 
+```SQL
+-- Top 5 Contributing Factors to Resulted Fatal Accidents.
+
+Select		Top 5
+		Contributing_Factor, 
+		COUNT(Collision_ID) AS Total_Accidents
+FROM 		Tbl_NYC_Traffic_Accidents
+WHERE 		Persons_Killed > 0
+GROUP BY 	Contributing_Factor
+ORDER BY 	COUNT(Collision_ID) DESC
+```
+
+|Contributing_Factor|Total_Accident|
+|----------|--------------|
+|Unspecified|185|
+|Unsafe Speed|130|
+|Driver Inattention/Distraction|74|
+|Failure to Yield Right-of-Way|46|
+|Traffic Control Disregarded|33|
+
+From the above analysis;
+
+- Fatal accidents with an unspecified contributing factor account for 185 cases. The high number of fatalities with an unspecified factor suggests a need for more detailed and precise reporting to better understand the root causes of fatal accidents.
+- Fatal accidents attributed to unsafe speed amount to 130 cases. The association of speed with fatalities underscores the critical role of adhering to speed limits for overall road safety.
+- Driver inattention or distraction contributed to 74 fatal accidents. This emphasizes the severe consequences of distractions while driving, highlighting the need for focused and attentive driving habits.
+- Fatal accidents resulting from a failure to yield right-of-way total 46 cases. This insight underscores the importance of proper yielding procedures and adherence to traffic rules to prevent fatal collisions.
+- Fatal accidents where traffic control was disregarded amount to 33 cases. Disregarding traffic control signals or signs contributes significantly to fatal outcomes, suggesting the need for enhanced compliance and enforcement measures.
+
+## Recommendation
+- Public awareness campaigns could be tailored to address specific months where accidents tend to be higher, encouraging responsible behavior and caution during those times.
+- Consider reinforcing traffic enforcement measures during months with higher accident rates. This can include increased patrols, stricter adherence to traffic rules, and enhanced monitoring of high-risk areas.
+- Develop and implement educational programs to inform the public about safe driving practices and potential risks during specific months. This can contribute to a culture of responsible driving.
+- Collaborate with law enforcement agencies, local authorities, and community organizations to create a comprehensive approach to accident prevention. Joint efforts can have a more significant impact.
+- Targeting safety campaigns and law enforcement efforts during identified peak hours, especially during rush hours on weekdays and weekend evenings, could lead to a significant reduction in accident rates.
+- Implement community engagement programs to raise awareness about road safety and encourage responsible driving behaviors.
+- Regularly review and update traffic infrastructure to align with the evolving needs of the community and advancements in safety standards.
+
+## Conclusion
+
+In conclusion, this analysis provides a foundation for evidence-based decision-making aimed at reducing traffic accidents, improving road safety, and enhancing the overall well-being of the community. The collaboration of various stakeholders, including city planners, law enforcement, and community organizations, will be essential for the successful implementation of recommended measures.
 
