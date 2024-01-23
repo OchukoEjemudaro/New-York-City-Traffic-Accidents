@@ -10,7 +10,7 @@
 - [Skills Demostrated](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#skills-demostrated)
 - [Data Source](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-source)
 - [Data Cleaning and Processing](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-cleaning-and-processing)
-- [Data Analysis and Insight](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-analysis-and-insight))
+- [Data Analysis and Insight](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-analysis-and-insight)
 - [Recommendation](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#recommendation)
 - [Conclusion](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#conclusion)
 
@@ -301,4 +301,16 @@ From the above analysis;
 ## Conclusion
 
 In conclusion, this analysis provides a foundation for evidence-based decision-making aimed at reducing traffic accidents, improving road safety, and enhancing the overall well-being of the community. The collaboration of various stakeholders, including city planners, law enforcement, and community organizations, will be essential for the successful implementation of recommended measures.
+
+Thank You For Reading
+
+You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiYjA3YzBmMmUtZTllZC00ZGJjLTg4ZTMtMzMyZjY5NGQ3ZWVjIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+
+---
+
+I’m interested in a Data Analyst role in a reputable organization where I can showcase my skills, take more responsibilities, continue to learn, an organization that I can grow with, where my work will be highly beneficial to the organization.
+
+You can reach me on ochukoejemudaro@gmail.com or [Twitter](https://twitter.com/iamochuks/) or [LinkedIn](https://www.linkedin.com/in/ochukoejemudaro01)
+
+THANK YOU
 
