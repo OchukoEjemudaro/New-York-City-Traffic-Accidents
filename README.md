@@ -54,7 +54,7 @@ Several stakeholders can benefit from the insights derived from this analysis of
 - Data Visualization
 
 ## Data Source
-The project employs a dataset containing information on NYC traffic accidents, obtained from the Maven Analytics website, where datasets are made available for practice purposes. The dataset, available in CSV format, comprises a single table, encompassing 238,421 rows and 18 columns. This table captures comprehensive details about NYC traffic accidents, including information such as Collision ID, Date, Time, Borough, Street Name, Cross Street, Latitude, Longitude, Contributing Factor, Vehicle Type, Persons Injured, Persons Killed, Pedestrians Injured, Pedestrians Killed, Cyclists Injured, Cyclists Killed, Motorists Injured, and Motorists Killed.
+The project employs a dataset containing information on NYC traffic accidents, obtained from the [Maven Analytics](https://www.mavenanalytics.io/data-playground?page=8&pageSize=5) website, where datasets are made available for practice purposes. The dataset, available in CSV format, comprises a single table, encompassing 238,421 rows and 18 columns. This table captures comprehensive details about NYC traffic accidents, including information such as Collision ID, Date, Time, Borough, Street Name, Cross Street, Latitude, Longitude, Contributing Factor, Vehicle Type, Persons Injured, Persons Killed, Pedestrians Injured, Pedestrians Killed, Cyclists Injured, Cyclists Killed, Motorists Injured, and Motorists Killed.
 
 Subsequently, this dataset was imported into Microsoft SQL Server for further analysis.
 
