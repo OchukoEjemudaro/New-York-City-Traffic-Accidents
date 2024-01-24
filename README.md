@@ -1,5 +1,7 @@
 # ANALYSIS OF NEW YORK CITY TRAFFIC ACCIDENTS
 
+A SQL and POWER BI project that examine New York City Traffic Accidents data, aiming to identify key patterns, contributing factors, and potential areas for improvement in New York City.
+
 ## Table of Content
 
 - [Project Overview](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#project-overview)
@@ -13,8 +15,6 @@
 - [Data Analysis and Insight](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-analysis-and-insight)
 - [Recommendation](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#recommendation)
 - [Conclusion](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#conclusion)
-
-A SQL and POWER BI project that examine New York City Traffic Accidents data, aiming to identify key patterns, contributing factors, and potential areas for improvement in New York City.
 
 ## Project Overview
 
