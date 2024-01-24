@@ -1,4 +1,4 @@
-# ANALYSIS OF NEW YORK CITY TRAFFIC ACCIDENTS
+# NEW YORK CITY TRAFFIC ACCIDENTS ANALYSIS
 
 A SQL and POWER BI project that examine New York City Traffic Accidents data, aiming to identify key patterns, contributing factors, and potential areas for improvement in New York City.
 
