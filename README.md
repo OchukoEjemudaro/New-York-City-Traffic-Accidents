@@ -294,7 +294,7 @@ From the above analysis;
 
 This data visualization was created using Power BI, each visual created displays information for each question in the business objective.
 
-
+![](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents/blob/main/Dashboard.png)
 
 ## Recommendation
 - Public awareness campaigns could be tailored to address specific months where accidents tend to be higher, encouraging responsible behavior and caution during those times.
