@@ -13,6 +13,7 @@ A SQL and POWER BI project that examine New York City Traffic Accidents data, ai
 - [Data Source](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-source)
 - [Data Cleaning and Processing](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-cleaning-and-processing)
 - [Data Analysis and Insight](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#data-analysis-and-insight)
+- [Data Visualization](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents#data-visualization)
 - [Recommendation](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#recommendation)
 - [Conclusion](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents?tab=readme-ov-file#conclusion)
 
@@ -296,6 +297,8 @@ This data visualization was created using Power BI, each visual created displays
 
 ![](https://github.com/OchukoEjemudaro/New-York-City-Traffic-Accidents/blob/main/Dashboard.png)
 
+You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiMDllNGM1YzEtODkxZS00NTUxLWIxMTAtNDJmM2ExNGRhZDYwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+
 ## Recommendation
 - Public awareness campaigns could be tailored to address specific months where accidents tend to be higher, encouraging responsible behavior and caution during those times.
 - Consider reinforcing traffic enforcement measures during months with higher accident rates. This can include increased patrols, stricter adherence to traffic rules, and enhanced monitoring of high-risk areas.
@@ -311,7 +314,6 @@ In conclusion, this analysis provides a foundation for evidence-based decision-m
 
 Thank You For Reading
 
-You can also interact with the report [Here](https://app.powerbi.com/view?r=eyJrIjoiYjA3YzBmMmUtZTllZC00ZGJjLTg4ZTMtMzMyZjY5NGQ3ZWVjIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 ---
 
