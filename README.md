@@ -290,6 +290,12 @@ From the above analysis;
 - Fatal accidents resulting from a failure to yield right-of-way total 46 cases. This insight underscores the importance of proper yielding procedures and adherence to traffic rules to prevent fatal collisions.
 - Fatal accidents where traffic control was disregarded amount to 33 cases. Disregarding traffic control signals or signs contributes significantly to fatal outcomes, suggesting the need for enhanced compliance and enforcement measures.
 
+## Data Visualization
+
+This data visualization was created using Power BI, each visual created displays information for each question in the business objective.
+
+
+
 ## Recommendation
 - Public awareness campaigns could be tailored to address specific months where accidents tend to be higher, encouraging responsible behavior and caution during those times.
 - Consider reinforcing traffic enforcement measures during months with higher accident rates. This can include increased patrols, stricter adherence to traffic rules, and enhanced monitoring of high-risk areas.
